@@ -1,0 +1,82 @@
+.App-header {
+  background-color: #123018;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+h1 {
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.input-task {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* input {
+  width: 80%;
+  letter-spacing: 1px;
+  padding: 1rem;
+} */
+
+input[type="text"] {
+  width: 80%;
+  letter-spacing: 1px;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+}
+
+li label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0;
+}
+
+li {
+  list-style: none;
+  text-align: left;
+  text-transform: capitalize;
+}
+
+
+input[type="checkbox"] {
+  box-shadow: 0 0 1px 2px #dde0dd;
+  accent-color: #123018;
+  width: 1rem;
+  height: 1rem;
+  cursor: pointer;
+}
+
+li label span {
+  transition: color 0.3s, text-decoration 0.3s;
+}
+
+li label input:checked + span {
+  color: #b5c9b5;
+  text-decoration: line-through;
+}
+
+.delete-btn, .edit-btn {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  /* color: #4e614e; */
+  transition: color 0.3s;
+
+}
