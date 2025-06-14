@@ -27,9 +27,8 @@ Följ stegen nedan för att köra applikationen lokalt med Docker och Docker Com
   cd dockercompose_labb ``
   
 ### 2. Bygg och starta containrar
-``docker-compose build  
-
-  docker-compose up``
+``docker-compose build    
+    docker-compose up``
 
 ---
 Planer för framtiden
