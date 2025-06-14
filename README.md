@@ -25,10 +25,12 @@ Följ stegen nedan för att köra applikationen lokalt med Docker och Docker Com
 ### 1. Klona projektet
 ``
 git clone https://github.com/TantBella/dockercompose_labb.git 
+
   cd dockercompose_labb``
 
 ### 2. Bygg och starta containrar
 ``docker-compose build  
+
   docker-compose up``
 
 ---
