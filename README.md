@@ -10,17 +10,12 @@ Applikationen består av:
 
 ---
 
-  Docker används för att containerisera alla tjänster
-
-  Docker Compose används för att koppla ihop backend, frontend och MongoDB i ett gemensamt nätverk
-
-  Volym används för att spara MongoDB-data lokalt
-
- Hantering av hemligheter
-
-    Lokalt används dotnet user-secrets för utveckling
-
-    I frontend används en .env-fil, för att undvika att känslig data hamnar på GitHub
+ - Docker används för att containerisera alla tjänster  
+ - Docker Compose används för att koppla ihop backend, frontend och MongoDB i ett gemensamt nätverk  
+ - Volym används för att spara MongoDB-data lokalt  
+- Hantering av hemligheter  
+   - Lokalt används dotnet user-secrets för utveckling  
+   - I frontend används en .env-fil, för att undvika att känslig data hamnar på GitHub
 ---
 
 ## Kom igång med Docker
@@ -29,20 +24,20 @@ Följ stegen nedan för att köra applikationen lokalt med Docker och Docker Com
 
 ### 1. Klona projektet
 ``bash
-git clone https://github.com/TantBella/dockercompose_labb.git
+git clone https://github.com/TantBella/dockercompose_labb.git  
 cd dockercompose_labb``
 
 ### 2. Bygg och starta containrar
-``docker-compose build
+``docker-compose build  
 docker-compose up``
 
 ---
 Planer för framtiden
 
-    Inloggning och autentisering
+  -Inloggning och autentisering
 
-    Möjlighet att sätta deadlines eller prioriteter
+  - Möjlighet att sätta deadlines eller prioriteter
 
-    Några "prokrastinatr-roliga" inslag i UI:t
+  - Några "prokrastinatr-roliga" inslag i UI:t
 
 
