@@ -1,5 +1,5 @@
 services:
-  mongo:
+   mongo:
     image: mongo
     container_name: procrastinatr-mongo
     restart: always
@@ -7,6 +7,8 @@ services:
       - "27017:27017"
     volumes:
       - mongo-data:/data/db
+    networks:
+      - app-network
 
   backend:
     build:
@@ -16,7 +18,8 @@ services:
       - "8081:8081"
     environment:
       - ASPNETCORE_URLS=http://+:8081
-      - ConnectionStrings__MongoDb=${MONGO_CONNECTION}
+      - ConnectionStrings__MongoDb=mongodb://<your-mongodb-connectionstring>
+
     depends_on:
       - mongo
     networks:
@@ -34,9 +37,6 @@ services:
     networks:
       - app-network
     restart: on-failure
-
-volumes:
-  mongo-data:
 
 networks:
   app-network:
