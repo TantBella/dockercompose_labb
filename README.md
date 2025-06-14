@@ -3,8 +3,8 @@
 Procrastinatr är en enkel fullstack webbapplikation byggd för att hjälpa dig hantera uppgifter – när du *väl* får tummen ur.
 
 Applikationen består av:
-- Ett **.NET 8 Web API** (backend) som hanterar uppgifter och lagrar dem i en MongoDB-databas.
-- Ett **React-frontend** (frontend) som kommunicerar med API:t och ger ett användarvänligt gränssnitt.
+- Ett **.NET 8 Web API** som hanterar uppgifter och lagrar dem i en MongoDB-databas.
+- Ett **React-frontend** som kommunicerar med API:t och ger ett användarvänligt gränssnitt.
 - Allt är paketerat och körs med **Docker Compose** för enkel uppstart och testning.
 - All data sparas i en MongoDB-databas som körs som en egen container.
 
@@ -24,11 +24,11 @@ Följ stegen nedan för att köra applikationen lokalt med Docker och Docker Com
 
 ### 1. Klona projektet
 ``git clone https://github.com/TantBella/dockercompose_labb.git   
-  cd dockercompose_labb ``
+    cd dockercompose_labb ``
   
 ### 2. Bygg och starta containrar
-``docker-compose build    
-    docker-compose up``
+``
+    docker-compose up --build``
 
 ---
 Planer för framtiden
