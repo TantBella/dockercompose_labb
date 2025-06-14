@@ -1,14 +1,24 @@
-version: '3.4'
-
 services:
+  mongo:
+    image: mongo
+    container_name: procrastinatr-mongo
+    restart: always
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+
   backend:
     build:
-      context: ./backend
+      context: ./backend/ProcrastinatrAPI
       dockerfile: Dockerfile
-    expose:
-      - "8081"
+    ports:
+      - "8081:8081"
     environment:
       - ASPNETCORE_URLS=http://+:8081
+      - ConnectionStrings__MongoDb=mongodb://mongo:27017
+    depends_on:
+      - mongo
     networks:
       - app-network
     restart: on-failure
@@ -19,13 +29,15 @@ services:
       dockerfile: Dockerfile
     ports:
       - "80:80"
-    environment:
-      - NODE_ENV=production
     depends_on:
       - backend
     networks:
       - app-network
     restart: on-failure
+
+volumes:
+  mongo-data:
+
 
 networks:
   app-network:
