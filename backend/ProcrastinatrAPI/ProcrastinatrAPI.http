@@ -1,0 +1,6 @@
+@ProcrastinatrAPI_HostAddress = http://localhost:5159
+
+GET {{ProcrastinatrAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
