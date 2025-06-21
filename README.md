@@ -1,7 +1,5 @@
 # Procrastinatr
 
-Procrastinatr är en enkel fullstack webbapplikation byggd för att hjälpa dig hantera uppgifter – när du *väl* får tummen ur.
-
 Applikationen består av:
 - Ett **.NET 8 Web API** som hanterar uppgifter och lagrar dem i en MongoDB-databas.
 - Ett **React-frontend** som kommunicerar med API:t och ger ett användarvänligt gränssnitt.
