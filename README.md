@@ -7,7 +7,6 @@
 - Ett **.NET 8 Web API** som hanterar uppgifter (todos) och lagrar dem i en **MongoDB**-databas.
 - Ett **React.js**-frontend som kommunicerar med API:t och erbjuder ett enkelt och intuitivt användargränssnitt.
 - Alla delar körs i **Docker-containrar**, gjorda med **Docker Compose** för enkel uppstart och hantering.
-- MongoDB körs som en separat container.
 
 ## Teknik & verktyg
 
