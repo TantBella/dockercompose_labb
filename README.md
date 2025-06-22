@@ -55,3 +55,5 @@ Applikationen kommer att vara tillgänglig på:
 ---
 
 Projektet är skapat som en del av min utbildning inom .NET och DevOps och visar hur man bygger och containeriserar en fullstackapplikation med moderna verktyg.
+
+![](https://github.com/TantBella/dockercompose_labb/blob/main/theprocrastinatr.png)
