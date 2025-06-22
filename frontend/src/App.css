@@ -15,7 +15,7 @@ h1 {
 }
 
 .input-task {
-  max-width: 400px;
+  max-width: 440px;
   margin: 0 auto;
   padding: 1rem;
 }
@@ -53,7 +53,6 @@ li {
   text-transform: capitalize;
 }
 
-
 input[type="checkbox"] {
   box-shadow: 0 0 1px 2px #dde0dd;
   accent-color: #123018;
@@ -71,12 +70,12 @@ li label input:checked + span {
   text-decoration: line-through;
 }
 
-.delete-btn, .edit-btn {
+.delete-btn,
+.edit-btn {
   background: none;
   border: none;
   font-size: 1.2rem;
   cursor: pointer;
   /* color: #4e614e; */
   transition: color 0.3s;
-
 }
